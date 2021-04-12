@@ -76,6 +76,28 @@ section{
 	border: none;
 	outline: none;
 }
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+    min-width: 100px;
+   justify-content: center;
+    padding-left: 5px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
 img:hover{
 	cursor: pointer;
 }
@@ -104,6 +126,12 @@ footer{
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
+
+}
+
+.footer-wrap{
+	display: flex;
+	flex-flow: space-between;
 }
 
 .footer-top{
@@ -122,14 +150,14 @@ footer{
 #footer-middle{
 	display: flex;
 	margin-left: 80px;
-	/*align-items: center;*/
+	align-items: center;
 }
 
 #footer-right{
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 20px;
-	align-items: center;
+	/*align-items: center;*/
 }
 
 /* responsiveness*/
